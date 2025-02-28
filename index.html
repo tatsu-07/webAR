@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <a-scene embedded arjs="patternRatio:0.80">
+      <a-assets>
+        <a-asset-item id="pika" src="https://cdn.glitch.global/a1d727aa-9787-480a-b68e-eccf01dde603/AIpikachu2.glb?v=1740665036057"></a-asset-item>
+      </a-assets>
+      <a-marker type="pattern" url="https://cdn.glitch.global/a1d727aa-9787-480a-b68e-eccf01dde603/pattern-01_pikachu%20pic.patt?v=1740663581287">
+        <a-entity gltf-model="#pika" animation-mixer="" position="0 0 0" rotation="270 0 0">
+        </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
